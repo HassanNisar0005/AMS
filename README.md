@@ -17,9 +17,13 @@ Web-dev(Backend), PHP, Laravel, Jquery, JavaScript, Bootstrap ...
 
 This project is a simple Attendance Management System developed using PHP, MySQL, HTML, CSS, Bootstrap, and JavaScript. It allows users to log in, register, mark attendance, submit leave requests, and view attendance records. The system is designed for both students and administrators, with different functionalities available to each user type.
 ## Screenshots  
+## Index Page
 ![App Screenshot](./reademeImages/m.png)  
+## Admin Dashboard
 ![App Screenshot](./reademeImages/am.png)  
+## Admin/User Login
 ![App Screenshot](./reademeImages/uL.png)  
+## User Dashboard.
 ![App Screenshot](./reademeImages/up.png)  
 
 ## Table of Contents
