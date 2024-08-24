@@ -1,0 +1,128 @@
+/* Container styling */
+
+body {
+    background-image: url('../images/default.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow-y: hidden;
+    font-family: "Playfair Display", serif !important;
+    font-optical-sizing: auto;
+}
+
+.container_req {
+    margin: 20px auto;
+    padding: 20px;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.row_req {
+    height: 84vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Heading styling */
+
+.container h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+/* Form styling */
+
+form {
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-weight: bold;
+}
+
+.form-control {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+
+/* Button styling */
+
+.btn {
+    display: inline-block;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+    color: #fff;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+    border-color: #545b62;
+}
+
+
+/* Alert styling */
+
+.alert {
+    font-size: 1rem;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+/* Responsive design for smaller screens */
+
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+    .container h2 {
+        font-size: 1.5rem;
+    }
+    .form-control {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+    .btn {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+}

@@ -1,0 +1,146 @@
+/* Body and background styling */
+
+body {
+    background-image: url('../images/default.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow-y: hidden;
+    font-family: "Playfair Display", serif !important;
+    font-optical-sizing: auto;
+}
+
+
+/* Container styling */
+
+.row_app {
+    height: 85vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container_app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: 90vw;
+    max-width: 1200px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    padding: 20px;
+}
+
+
+/* Table styling */
+
+.table {
+    margin-top: 20px;
+}
+
+.table thead th {
+    background-color: rgba(255, 255, 255, 0.7);
+    /* Semi-transparent white for headers */
+    color: #333;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(255, 255, 255, 0.3);
+    /* Light stripe effect */
+}
+
+
+/* Alert styling */
+
+.alert {
+    font-size: 1rem;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+
+/* Button styling */
+
+.btn {
+    display: inline-block;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+}
+
+.btn-approve {
+    background-color: #28a745;
+    /* Bootstrap success color */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    font-size: 14px;
+    transition: opacity 0.3s;
+}
+
+.btn-reject {
+    background-color: #dc3545;
+    /* Bootstrap danger color */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    font-size: 14px;
+    transition: opacity 0.3s;
+}
+
+.btn-approve:hover,
+.btn-reject:hover {
+    opacity: 0.8;
+}
+
+
+/* Responsive design for smaller screens */
+
+@media (max-width: 768px) {
+    .container_app {
+        width: 100vw;
+        /* Take full width on smaller screens */
+        padding: 15px;
+    }
+    .container_app h2 {
+        font-size: 1.5rem;
+    }
+    .btn {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+    .table thead th,
+    .table tbody td {
+        font-size: 0.9rem;
+        /* Smaller font for table data */
+    }
+    .table {
+        width: 100%;
+        /* Ensure the table is responsive */
+    }
+}

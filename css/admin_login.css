@@ -1,0 +1,50 @@
+body {
+    background-image: url('../images/default.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow-y: hidden;
+    font-family: "Playfair Display", serif !important;
+    font-optical-sizing: auto;
+}
+
+.container {
+    display: flex;
+    height: 84vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-form {
+    border-radius: 8px;
+    padding: 20px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.custom-form .form-control,
+.custom-form .btn {
+    width: 100%;
+}
+
+.custom-form label {
+    font-weight: bold;
+}
+
+.text-center {
+    font-weight: 600;
+    text-align: center;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+}

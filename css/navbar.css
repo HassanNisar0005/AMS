@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding-top: 60px;
+}
+
+.custom-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    color: #343a40;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+
+/* .custom-navbar-brand {
+    display: flex;
+    align-items: center;
+    color: #343a40;
+    text-decoration: none;
+    font-size: 1.25rem;
+} */
+
+.custom-navbar-brand i {
+    margin-right: 0.5rem;
+}
+
+.custom-navbar-toggler {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.custom-toggler-icon {
+    width: 30px;
+    height: 3px;
+    background-color: #343a40;
+    transition: all 0.3s ease;
+}
+
+
+/* Navbar collapse */
+
+.custom-navbar-collapse {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.custom-navbar-nav {
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.custom-nav-item {
+    position: relative;
+}
+
+.custom-nav-link {
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+
+/* Custom hover effect for navbar links */
+
+.custom-navbar-brand {
+    position: relative;
+    display: inline-block;
+    /* Ensure it behaves like an inline element */
+    color: #000;
+    /* Default color, adjust as needed */
+    text-decoration: none;
+    /* Remove underline if present */
+    font-size: 24px;
+    /* Adjust font size as needed */
+    transition: color 0.3s ease-in-out;
+    /* Smooth color transition */
+}
+
+.custom-navbar-brand::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -5px;
+    /* Adjust if needed to position the line */
+    left: 0;
+    background-color: #ff5722;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+
+.custom-navbar-brand:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+.custom-navbar-brand:hover {
+    color: #ff5722;
+    /* Color on hover */
+}
+
+.custom-navbar-nav .custom-nav-link {
+    position: relative;
+    overflow: hidden;
+    transition: color 0.3s ease-in-out;
+}
+
+.custom-navbar-nav .custom-nav-link::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ff5722;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+
+.custom-navbar-nav .custom-nav-link:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+.custom-navbar-nav .custom-nav-link:hover {
+    color: #ff5722;
+}
+
+@media (max-width: 768px) {
+    .custom-navbar-toggler {
+        display: flex;
+    }
+    .custom-navbar-collapse {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        padding: 1rem;
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+        backdrop-filter: blur(6px);
+        -webkit-backdrop-filter: blur(6px);
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    }
+    .custom-navbar-collapse.active {
+        display: flex;
+    }
+    .custom-toggler-icon {
+        width: 30px;
+        height: 3px;
+        background-color: #000;
+        margin: 0;
+        transition: all 0.3s ease-in-out;
+        position: relative;
+    }
+    /* Cross icon transformation */
+    .custom-navbar-toggler.active .custom-toggler-icon:nth-child(1) {
+        transform: rotate(45deg);
+        top: 8px;
+    }
+    .custom-navbar-toggler.active .custom-toggler-icon:nth-child(2) {
+        opacity: 0;
+    }
+    .custom-navbar-toggler.active .custom-toggler-icon:nth-child(3) {
+        transform: rotate(-45deg);
+        top: -8px;
+    }
+    .custom-navbar-brand {
+        font-size: 1rem;
+    }
+    .custom-navbar-nav {
+        text-align: center;
+    }
+    .custom-nav-link {
+        font-size: 0.875rem;
+    }
+}

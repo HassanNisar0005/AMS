@@ -1,0 +1,155 @@
+/* Container styling */
+
+body {
+    background-image: url('../images/default.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow-y: hidden;
+    font-family: "Playfair Display", serif !important;
+    font-optical-sizing: auto;
+}
+
+.row_edit {
+    height: 85vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container_edit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    width: 35vw;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+
+/* Heading styling */
+
+.container h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+/* Form styling */
+
+form {
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-weight: bold;
+}
+
+.form-control-file {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+
+/* Profile picture image */
+
+img {
+    width: 100px;
+    /* Fixed width */
+    height: 100px;
+    /* Fixed height */
+    display: block;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    object-fit: cover;
+    /* Ensures the image covers the box without distortion */
+}
+
+
+/* Button styling */
+
+.btn {
+    display: inline-block;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+    color: #fff;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+    border-color: #545b62;
+}
+
+
+/* Alert styling */
+
+.alert {
+    font-size: 1rem;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+/* Responsive design for smaller screens */
+
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+    .container h2 {
+        font-size: 1.5rem;
+    }
+    .form-control-file {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+    .btn {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+}

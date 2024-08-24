@@ -1,0 +1,107 @@
+body {
+    background-image: url('../images/default.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: "Playfair Display", serif !important;
+    font-optical-sizing: auto;
+}
+
+.row_adm {
+    height: 85vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container_adm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 40vw;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+
+/* Heading Styles */
+
+h2,
+h3 {
+    color: #343a40;
+    margin-bottom: 20px;
+    font-weight: 600 !important;
+}
+
+
+/* Table Styles */
+
+.table {
+    width: 100%;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.table th,
+.table td {
+    padding: 12px 15px;
+    text-align: left;
+}
+
+.table thead th {
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+    /* Light grey for alternate rows */
+}
+
+.table tbody tr:hover {
+    background-color: #e9ecef;
+    /* Slightly darker grey on hover */
+}
+
+
+/* Image Styles */
+
+.table img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+/* Button Styles */
+
+.btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+    border-color: #bd2130;
+}

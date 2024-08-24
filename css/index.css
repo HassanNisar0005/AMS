@@ -1,0 +1,103 @@
+    body {
+        background-image: url('../images/default.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        overflow-y: hidden;
+        font-family: "Playfair Display", serif !important;
+        font-optical-sizing: auto;
+    }
+    
+    .container {
+        display: flex;
+        height: 79vh;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .row {
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+        border-radius: 20px;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    }
+    
+    .text-center {
+        color: #fff;
+        font-weight: 600;
+    }
+    
+    h1 {
+        color: #fff;
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+    }
+    
+    p {
+        color: #fff;
+        font-size: 1.1rem;
+        margin-bottom: 30px;
+    }
+    
+    .btn {
+        border-radius: 5px;
+        font-size: 1rem;
+        padding: 10px 20px;
+        margin: 5px;
+        text-decoration: none;
+    }
+    
+    .btn-primary {
+        background-color: #007bff;
+        border-color: #007bff;
+        color: #fff;
+    }
+    
+    .btn-secondary {
+        background-color: #6c757d;
+        border-color: #6c757d;
+        color: #fff;
+    }
+    
+    .btn-info {
+        background-color: #17a2b8;
+        border-color: #17a2b8;
+        color: #fff;
+    }
+    
+    .btn-warning {
+        background-color: #ffc107;
+        border-color: #ffc107;
+        color: #212529;
+    }
+    
+    .btn-danger {
+        background-color: #dc3545;
+        border-color: #dc3545;
+        color: #fff;
+    }
+    
+    img#profilePicture {
+        border-radius: 50%;
+        border: 2px solid #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+    
+    .mt-4 {
+        margin-top: 1.5rem;
+    }
+    
+    @media (max-width: 768px) {
+        h1 {
+            font-size: 2rem;
+        }
+        p {
+            font-size: 1rem;
+        }
+        .btn {
+            font-size: 0.9rem;
+            padding: 8px 15px;
+        }
+    }
