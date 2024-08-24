@@ -101,7 +101,7 @@ This project is a simple Attendance Management System developed using PHP, MySQL
 - Ensure the database and directory paths match your setup.
 - Add any additional details specific to your project as needed.
     
-## Other Common Github Profile Sections  
+## Others
 👩‍💻 I'm currently studing in Paf-Iast Haripur,Pakistan.
     
 🧠 I'm currently learning Python    
